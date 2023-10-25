@@ -22,6 +22,8 @@
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/custom-animation.css">
    <link rel="stylesheet" href="assets/css/main.css">
+
+   <script src="https://web3forms.com/client/script.js" async defer></script>
 </head>
 
 <body>
@@ -534,7 +536,10 @@
                   <div class="bli-uppringd-container">
                      <p class="bli-uppringd">Fyll i dina uppgifter om du hellre önskar att bli uppringd av oss.<br> En certifierad Elektriker kontaktar dig inom några minuter!</p>
                   </div>
-                  <form action="https://formsubmit.co/1c2af139fc2ddbcd5badd6247f785887" method="POST" class="tp-order-form-wrap d-flex align-items-center justify-content-between">
+                  <form action="https://api.web3forms.com/submit" method="POST" class="tp-order-form-wrap d-flex align-items-center justify-content-between">
+
+                     <input type="hidden" name="access_key" value="16a54b78-1ab8-45c1-89d1-5b66499093c8">
+
                      <div name="name" class="tp-order-form-group">
                         <input type="text" name="name" placeholder="Namn">
                      </div>
@@ -548,7 +553,7 @@
                         <input type="text" name="Jag vill har hjälp med " placeholder="Jag vill ha hjälp med">
                      </div>
                      <div class="tp-order-form-group">
-                        <button class="tp-btn-black"><span>Bli uppringd nu!</span></button>
+                        <button type="submit" class="tp-btn-black"><span>Bli uppringd nu!</span></button>
                      </div>
                   </form>                  
                </div>
@@ -1216,13 +1221,16 @@
                      <span><a href="tel:0722400450">Vid akut hjälp</a><br> <a href="tel:0722400450"><i class="flaticon-phone-call">0722 400 450</i></a></span>
                      
                      </div>
-                     <form action="https://formsubmit.co/1c2af139fc2ddbcd5badd6247f785887" method="POST" class="tp-contact-2-input-box">
+                     <form action="https://api.web3forms.com/submit" method="POST" class="tp-contact-2-input-box">
+
+                        <input type="hidden" name="access_key" value="16a54b78-1ab8-45c1-89d1-5b66499093c8">
+
                         <input type="text" name="name" placeholder="Namn*">
                         <input type="email" name="email" placeholder="Email*">
                         <input type="text" name="tel" placeholder="Telefon*">
                         <textarea name="meddelande" placeholder="Meddelande*"></textarea>
                         <label for="file ">Välj en eller flera bilder att ladda upp - max 5mb</label>
-                        <input type="file" id="file" value="5242880" name="attachment" accept="image/png, image/jpeg, .doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" multiple>
+                        <input type="file" id="file" name="attachment" accept="image/png, image/jpeg, .doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" multiple>
                         <label>
                            <input name="checkbox" type="checkbox" required>
                             Jag accepterar att<br> Nordic Elinstallation lagrar och bearbetar mina uppgifter. 
