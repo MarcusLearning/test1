@@ -16550,12 +16550,4 @@ p.checkout-coupon input[type=text]:focus {
 
 }
 
-* {
-
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
-}
-
 /*# sourceMappingURL=main.css.map */
