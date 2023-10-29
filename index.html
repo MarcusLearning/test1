@@ -12,16 +12,36 @@
    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png" loading="lazy">
 
    <!-- CSS here -->
-   <link rel="stylesheet" href="assets/css/bootstrap.css">
    <link rel="stylesheet" href="assets/css/animate.css">
    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
    <link rel="stylesheet" href="assets/css/slick.css">
    <link rel="stylesheet" href="assets/css/magnific-popup.css">
    <link rel="stylesheet" href="assets/css/flaticon_biddut.css">
-   <link rel="stylesheet" loading="lazy" href="assets/css/font-awesome-pro.css">
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/custom-animation.css">
    <link rel="stylesheet" href="assets/css/main.css">
+
+
+   <!-- IF BROWSER DOESN'T SUPPORT JAVASCRIPT THEN USE NORMAL LINK TAGS TO LOAD CSS -->
+   <noscript>
+      <link rel="stylesheet" type="text/css" href="assets/css/font-awesome-pro.css"/>
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"/>
+   </noscript>
+
+   <!-- LOAD CSS -->
+   <script type="text/javascript">//<![CDATA[
+   function lazycss(url) {
+   var css = document.createElement("link");
+   css.href = url;
+   css.rel = "stylesheet";
+   css.type = "text/css";
+   document.getElementsByTagName("head")[0].appendChild(css);
+   }
+   // LOAD CSS
+   lazycss("assets/css/font-awesome-pro.css");
+   lazycss("assets/css/bootstrap.css");
+   //]]></script> 
+
 
    <script src="https://web3forms.com/client/script.js" async defer></script>
    <!-- Google Tag Manager -->
